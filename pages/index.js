@@ -1,10 +1,10 @@
 import { Button } from 'react-bootstrap'; //  COMMENT IN FOR AUTH
-import { signOut } from '../utils/auth'; // COMMENT IN FOR AUTH
-import { useAuth } from '../utils/context/authContext'; //  COMMENT IN FOR AUTH
+// import { signOut } from '../utils/auth'; // COMMENT IN FOR AUTH
 import { useState } from 'react';
+import { useAuth } from '../utils/context/authContext'; //  COMMENT IN FOR AUTH
 
 function Home() {
-  const [value, setValue] =useState(0);
+  const [value, setValue] = useState(0);
   const { user } = useAuth(); //  COMMENT IN FOR AUTH
 
   const handleClick = () => {
